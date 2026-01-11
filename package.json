@@ -1,0 +1,38 @@
+{
+  "name": "zxcvbnm",
+  "version": "1.0.0",
+  "description": "AI agent for your terminal",
+  "main": "dist/cli.js",
+  "type": "module",
+  "bin": {
+    "zxcvbnm": "./dist/cli.js"
+  },
+  "scripts": {
+    "dev": "tsx src/cli.ts",
+    "build": "tsc && chmod +x dist/cli.js",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/peterchoi1014/zxcvbnm-ai.git"
+  },
+  "keywords": [
+    "ai",
+    "cli",
+    "terminal",
+    "agent"
+  ],
+  "author": "Peter Choi",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^25.0.6",
+    "jest": "^30.2.0",
+    "ts-jest": "^29.4.6",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "commander": "^14.0.2",
+    "openai": "^6.16.0"
+  }
+}
